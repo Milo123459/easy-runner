@@ -4,7 +4,7 @@ WORKDIR /runner
 
 RUN apt update
 
-RUN apt install curl
+RUN DEBIAN_FRONTEND=noninteractive apt install curl -y
 
 RUN curl -o actions-runner -L https://github.com/actions/runner/releases/download/v2.285.0/actions-runner-linux-x64-2.285.0.tar.gz
 
