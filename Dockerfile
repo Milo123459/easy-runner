@@ -1,5 +1,7 @@
 FROM debian:buster-slim
 
+USER runner
+
 WORKDIR /runner
 
 RUN apt update
