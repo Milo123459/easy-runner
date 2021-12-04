@@ -2,7 +2,7 @@ FROM debian:bullseye-slim
 
 WORKDIR /runner
 
-RUN apt-get install curl
+RUN apt install curl
 
 RUN curl -o actions-runner -L https://github.com/actions/runner/releases/download/v2.285.0/actions-runner-linux-x64-2.285.0.tar.gz
 
