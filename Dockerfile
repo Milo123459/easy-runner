@@ -10,7 +10,7 @@ RUN curl -o actions-runner -L https://github.com/actions/runner/releases/downloa
 
 RUN tar xzf ./actions-runner
 
-USER runner
+USER 7000
 
 RUN ./config.sh --url https://github.com/${REPO} --token ${TOKEN}
 
